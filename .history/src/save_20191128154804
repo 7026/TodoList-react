@@ -1,0 +1,13 @@
+{/* unmountOnExit  隐藏时消除dome */}
+        <CSSTransition
+          unmountOnExit
+          in={this.state.show}
+          timeout={1000}
+          classNames="fade"
+          onEntered={el => {
+            el.style.color = 'blue'
+          }}
+          appear={true}
+        >
+          <div>hello</div>
+        </CSSTransition>
